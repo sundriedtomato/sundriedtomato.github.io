@@ -28,7 +28,38 @@
             An early example of the use of a time capsule was the Detroit Century Box. The brainchild of Detroit mayor William C. Maybury, it was created on December 31, 1900, and scheduled to be opened 100 years later. It was filled with photographs and letters from 56 prominent residents describing life in 1900 and making predictions for the future, and included a letter by Maybury addressed to the mayor of Detroit in 2000. The capsule was opened by city officials on December 31, 2000, in a ceremony presided over by mayor Dennis Archer.[3][4]
             </p>
 
-        <div class="button-container"><button type="button" class="black-button">GET NOTIFICATION</button></div>
+        <div class="button-container"><button type="button" class="black-button" data-toggle="modal" data-target="#notifyme">GET NOTIFICATION</button></div>
+        <!-- Model Form -->
+        <div class="modal fade" id="notifyme" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="ModalLabel">Get Notification</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name" class="notify-form-label">Name:</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="notify-form-label">Email:</label>
+                    <input type="text" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="mobile" class="notify-form-label">Mobile:</label>
+                    <input type="text" class="form-control" id="mobile">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="black-button">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Model Form End-->
         <div class="button-container"><button type="button" class="white-button" onclick="window.open('https://en.wikipedia.org/wiki/Time_capsule')">ABOUT CAPSULES</button></div>
       </div>
       <div id="clockdiv" class="timer-container">

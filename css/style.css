@@ -7,6 +7,11 @@ h1 {
 	font-family: 'Squada One', cursive;
 }
 
+h4 {
+	font-size: 20px;
+	font-family: 'Squada One', cursive;
+}
+
 p {
 	font-size: 13px;
 	font-family: 'Ubuntu', sans-serif;
@@ -123,6 +128,31 @@ button {
 	display: -webkit-flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.notify-form-label {
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
 
 @media only screen and (min-width: 1200px) {
