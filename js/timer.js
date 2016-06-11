@@ -1,3 +1,4 @@
+//Copied from:
 //https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
 
 function getTimeRemaining(endtime) {
@@ -39,5 +40,6 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+//Happy 1st anniverary!!
+var deadline = new Date(2017,07,23, 17);
 initializeClock('clockdiv', deadline);
