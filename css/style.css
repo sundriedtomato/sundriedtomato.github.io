@@ -36,6 +36,7 @@ button {
 
 .container {
 	display: flex;
+	display: -webkit-flex;
 	flex-flow: row wrap;
 	background-color: none;
 	margin:auto;
@@ -49,6 +50,7 @@ button {
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
+	display: -webkit-flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
@@ -59,6 +61,7 @@ button {
 	background-color: white;
 	padding: 25px;
 	display: flex;
+	display: -webkit-flex;
 	flex-flow: row wrap;
 }
 
@@ -68,6 +71,7 @@ button {
 	height: 120px;
 	margin: 10px;
 	display: flex;
+	display: -webkit-flex;
 	flex-flow: row wrap;
 
 }
@@ -76,6 +80,7 @@ button {
 	margin: auto;
 	height: 80px;
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -88,6 +93,7 @@ button {
 	font-size: 35px;
 	font-weight: 300;
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -102,6 +108,7 @@ button {
 	color: white;
 	font-family: 'Ubuntu', sans-serif;
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
 	align-items: center;
 }
