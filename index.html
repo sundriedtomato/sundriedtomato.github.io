@@ -31,21 +31,21 @@
         <div class="button-container"><button type="button" class="black-button">GET NOTIFICATION</button></div>
         <div class="button-container"><button type="button" class="white-button">ABOUT CAPSULES</button></div>
       </div>
-      <div class="timer-container">
+      <div id="clockdiv" class="timer-container">
         <div class="timer-item-container">
-          <div class="time-number-container time-number-bold">365</div>
+          <div class="time-number-container time-number-bold"><span class="days"></span></div>
           <div class="time-label-container">DAYS</div>
         </div>
         <div class="timer-item-container">
-          <div class="time-number-container">12</div>
+          <div class="time-number-container"><span class="hours"></span></div>
           <div class="time-label-container">HOURS</div>
         </div>
         <div class="timer-item-container">
-          <div class="time-number-container">34</div>
+          <div class="time-number-container"><span class="minutes"></span></div>
           <div class="time-label-container">MINS</div>
         </div>
         <div class="timer-item-container">
-          <div class="time-number-container">23</div>
+          <div class="time-number-container"><span class="seconds"></span></div>
           <div class="time-label-container">SECS</div>
         </div>
       </div>
@@ -55,5 +55,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- timer -->
+    <script src="js/timer.js"></script>
   </body>
 </html>
