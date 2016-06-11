@@ -31,7 +31,7 @@
         <div class="button-container"><button type="button" class="black-button" data-toggle="modal" data-target="#notifyme">GET NOTIFICATION</button></div>
         <!-- Model Form -->
         <div class="modal fade" id="notifyme" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-          <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -54,7 +54,7 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="black-button">SUBMIT</button>
+                <button type="button" class="black-button" onclick="postContactToGoogle()">SUBMIT</button>
               </div>
             </div>
           </div>
@@ -81,6 +81,31 @@
         </div>
       </div>
     </div>
+
+    <script>
+    function postContactToGoogle() {
+        var email = $('#email').val();
+        var name = $('#name').val();
+        var mobile = $('#mobile').val();
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1wjjzIps4OulpklpWeMNBaL9VN5LTZ-PuMbXHEL6_DUo/formResponse",
+                data: { "entry.1159335441": name,
+                "entry.1985620863": email, 
+                "entry.504464527": mobile },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                        
+                    },
+                    200: function () {
+                        
+                    }
+                }
+            });
+    }
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

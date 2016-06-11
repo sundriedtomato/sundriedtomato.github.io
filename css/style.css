@@ -140,7 +140,7 @@ button {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 700px) { 
   .modal:before {
     display: inline-block;
     vertical-align: middle;
@@ -153,6 +153,7 @@ button {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
+  width: 300px;
 }
 
 @media only screen and (min-width: 1200px) {
