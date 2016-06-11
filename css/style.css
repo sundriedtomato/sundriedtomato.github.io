@@ -1,5 +1,9 @@
 body {
 	background-color: #051735;
+	background-image: url("../img/background.png");
+	background-size: 500px;
+	background-opacity: 0.2;
+	background-repeat: repeat;
 }
 
 h1 {
