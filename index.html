@@ -38,6 +38,7 @@
                 <h4 class="modal-title" id="ModalLabel">Get Notification</h4>
               </div>
               <div class="modal-body">
+
                 <form>
                   <div class="form-group">
                     <label for="name" class="notify-form-label">Name:</label>
@@ -52,9 +53,10 @@
                     <input type="text" class="form-control" id="mobile">
                   </div>
                 </form>
+
               </div>
               <div class="modal-footer">
-                <button type="button" class="black-button" onclick="postContactToGoogle()">SUBMIT</button>
+                <button type="button" class="black-button" onclick="postContactToGoogle()" data-dismiss="modal">SUBMIT</button>
               </div>
             </div>
           </div>
@@ -87,14 +89,16 @@
         var email = $('#email').val();
         var name = $('#name').val();
         var mobile = $('#mobile').val();
+        var baseurl = "https://docs.google.com/forms/d/1wjjzIps4OulpklpWeMNBaL9VN5LTZ-PuMbXHEL6_DUo/formResponse?"
 
+        $('#notifyme').append("<p>Thank you</p>");
             $.ajax({
                 url: "https://docs.google.com/forms/d/1wjjzIps4OulpklpWeMNBaL9VN5LTZ-PuMbXHEL6_DUo/formResponse",
                 data: { "entry.1159335441": name,
                 "entry.1985620863": email, 
                 "entry.504464527": mobile },
                 type: "POST",
-                dataType: "xml",
+                dataType: "json",
                 statusCode: {
                     0: function () {
                         
@@ -104,6 +108,7 @@
                     }
                 }
             });
+        $('#notifyme').append("<p>Thank you</p>");
     }
     </script>
 
