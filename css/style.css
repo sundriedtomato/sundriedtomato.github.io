@@ -1,0 +1,219 @@
+body {
+	background-color: #051735;
+}
+
+h1 {
+	font-size: 20px;
+	font-family: 'Squada One', cursive;
+}
+
+p {
+	font-size: 13px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+button {   
+    border: 2px solid #000000;
+    border-radius: 25px;  
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+.white-button {
+	background-color: white;
+	color: black;
+}
+
+.black-button {
+	background-color: black;
+	color: white;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: none;
+	margin:auto;
+	margin-top: 50px;
+	padding: 0px;
+}
+
+.timer-container {
+	background-image: url("../img/timer_bg.png");
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.text-container {
+	background-color: white;
+	padding: 25px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.timer-item-container {
+	background-color: none;
+	width: 90px;
+	height: 120px;
+	margin: 10px;
+	display: flex;
+	flex-flow: row wrap;
+
+}
+
+.button-container {
+	margin: auto;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.time-number-container {
+	width: 100%;
+	height: 80%;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.time-label-container {
+	width: 100%;
+	height: 20%;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (min-width: 1200px) {
+	.container {
+		width: 1000px;
+		height: 550px;
+	}
+
+	.timer-container {
+		order: 2;
+		width: 65%;
+		height: 100%;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+	.text-container {
+		order: 1;
+		width: 35%;
+		height: 100%;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+
+	.button-container {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+	.container {
+		width: 900px;
+		height: 550px;
+	}
+
+	.timer-container {
+		order: 2;
+		width: 65%;
+		height: 100%;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+	.text-container {
+		order: 1;
+		width: 35%;
+		height: 100%;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+
+	.button-container {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+	.container {
+		width: 95%;
+		height: 900px;
+	}
+
+	.timer-container {
+		order: 1;
+		width: 100%;
+		height: 60%;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+	}
+
+	.text-container {
+		order: 2;
+		width: 100%;
+		height: 40%;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+
+	.button-container {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 95%;
+		height: 1000px;
+	}
+
+	.timer-container {
+		order: 1;
+		width: 100%;
+		height: 60%;
+		padding: 50px;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+	}
+
+	.text-container {
+		order: 2;
+		width: 100%;
+		height: 40%;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+
+	.timer-item-container {
+		width: 40%;
+	}
+
+	.button-container {
+		width: 50%;
+	}
+
+	button {
+
+	}
+}
