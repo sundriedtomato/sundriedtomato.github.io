@@ -38,6 +38,8 @@ button {
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row wrap;
+	-webkit-flex-direction: row;
+   	-webkit-flex-wrap: wrap;
 	background-color: none;
 	margin:auto;
 	margin-top: 50px;
@@ -52,8 +54,13 @@ button {
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row wrap;
+	-webkit-flex-direction: row;
+   	-webkit-flex-wrap: wrap;
 	justify-content: center;
+	-webkit-justify-content: center;
 	align-items: center;
+	-webkit-align-items: center;
+	margin: 0px;
 	
 }
 
@@ -63,6 +70,9 @@ button {
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row wrap;
+	-webkit-flex-direction: row;
+   	-webkit-flex-wrap: wrap;
+   	margin: 0px;
 }
 
 .timer-item-container {
@@ -73,6 +83,8 @@ button {
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row wrap;
+	-webkit-flex-direction: row;
+   	-webkit-flex-wrap: wrap;
 
 }
 
@@ -121,7 +133,7 @@ button {
 
 	.timer-container {
 		order: 2;
-		width: 65%;
+		width: 64%;
 		height: 100%;
 		border-top-right-radius: 15px;
 		border-bottom-right-radius: 15px;
