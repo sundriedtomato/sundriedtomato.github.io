@@ -24,8 +24,8 @@ p {
 button {   
     border: 2px solid #000000;
     border-radius: 25px;  
-    padding: 10px 32px;
-    text-align: center;
+    padding: 10px;
+
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
@@ -36,11 +36,15 @@ button {
 .white-button {
 	background-color: white;
 	color: black;
+	text-align: center;
+	width: 190px;
 }
 
 .black-button {
 	background-color: black;
 	color: white;
+	text-align: center;
+	width: 190px;
 }
 
 .container {
@@ -99,7 +103,7 @@ button {
 
 .button-container {
 	margin: auto;
-	height: 80px;
+	height: 70px;
 	display: flex;
 	display: -webkit-flex;
 	justify-content: center;
