@@ -2,7 +2,10 @@
 //https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
 
 function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
+  var today = new Date();
+  var t = Date.parse(endtime) - Date.parse(today);
+  console.log(endtime);
+  console.log(today)
   var seconds = Math.floor((t / 1000) % 60);
   var minutes = Math.floor((t / 1000 / 60) % 60);
   var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -40,6 +43,6 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-//Happy 1st anniverary!!
-var deadline = new Date(2017,07,23, 17);
+//Happy 1st anniverary!! 
+var deadline = new Date("July 23, 2017 18:00:00");
 initializeClock('clockdiv', deadline);
