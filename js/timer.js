@@ -4,8 +4,6 @@
 function getTimeRemaining(endtime) {
   var today = new Date();
   var t = Date.parse(endtime) - Date.parse(today);
-  console.log(endtime);
-  console.log(today)
   var seconds = Math.floor((t / 1000) % 60);
   var minutes = Math.floor((t / 1000 / 60) % 60);
   var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -44,5 +42,5 @@ function initializeClock(id, endtime) {
 }
 
 //Happy 1st anniverary!! 
-var deadline = new Date("July 23, 2017 18:00:00");
+var deadline = new Date("July 23, 2017 18:00:00 GMT");
 initializeClock('clockdiv', deadline);
