@@ -37,8 +37,13 @@ function initializeClock(id, endtime) {
     }
   }
 
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
+updateClock();
+  var now = new Date();
+  if (now > deadline) {
+    clock.innerHTML = '<iframe src="https://drive.google.com/file/d/0Bxy6IsYHqf7YbllEdDlLZ2FaMHM/preview" width="640" height="480"></iframe>';
+  } else {
+    var timeinterval = setInterval(updateClock, 1000);
+  }
 }
 
 //Happy 1st anniverary!! 
